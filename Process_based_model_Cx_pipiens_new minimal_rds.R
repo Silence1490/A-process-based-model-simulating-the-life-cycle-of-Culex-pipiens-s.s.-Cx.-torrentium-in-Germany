@@ -368,7 +368,7 @@ for (j in seq_along(tg_Year)) {
       E_D[[j]][i - 1] +
         phi3_res[[j]][i - 1] * P_D[[j]][i - 1] *(1-muem)*
         exp(-gam* (1 + (P_m[[j]][i - 1] + P_f[[j]][i - 1] + P_D[[j]][i - 1]) / KPt_res[[j]][i - 1])) -
-        phi4 * matings_ED[[j]][i - 1] -
+        matings_ED[[j]][i - 1] -
         muA_res[[j]][i - 1] * E_D[[j]][i - 1],
       0
     )
